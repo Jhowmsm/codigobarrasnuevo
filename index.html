@@ -94,11 +94,11 @@
         // Crear PDF
         const pdf = new jsPDF();
         const pageWidth = pdf.internal.pageSize.getWidth();
-        const imgWidth = 50;
-        const imgX = (pageWidth - imgWidth) / 5;
-        const imgY = 40;
+        const imgWidth = 25;
+        const imgX = (pageWidth - imgWidth) / 2;
+        const imgY = 20;
 
-        pdf.addImage(imageData, 'PNG', imgX, imgY, imgWidth, 50);
+        pdf.addImage(imageData, 'PNG', imgX, imgY, imgWidth, 20);
         pdf.setFontSize(16);
         pdf.text(fullText, pageWidth / 2, imgY + 60, { align: 'center' });
 
