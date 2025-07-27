@@ -95,7 +95,7 @@
         const pdf = new jsPDF();
         const pageWidth = pdf.internal.pageSize.getWidth();
         const imgWidth = 50;
-        const imgX = (pageWidth - imgWidth) / 2;
+        const imgX = (pageWidth - imgWidth) / 5;
         const imgY = 40;
 
         pdf.addImage(imageData, 'PNG', imgX, imgY, imgWidth, 50);
